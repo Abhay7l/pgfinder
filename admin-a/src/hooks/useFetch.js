@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { BASE_URL } from "../constants";
 const useFetch = (url) => {
-    const BASE_URL=`http://localhost:8000/api`;
+    // const BASE_URL=`http://localhost:8000/api`;
     const [data,setData] = useState([]);
     const [loading,setLoading] = useState(false);
     const [error,setError] = useState(false);
