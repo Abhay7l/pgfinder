@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userContainer{
+    width: 40px;;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform:capitalize;
+    // position: absolute;
+    z-index: 999;
+    font-size: small;
+}
+
+.userContainer > div{
+    color:#00337C;
+}
+.options{
+    position:relative;;
+    top:50px;
+    // left:50px;
+}
