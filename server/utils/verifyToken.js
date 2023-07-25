@@ -20,7 +20,6 @@ export const verifyUser = (req, res, next) => {
     if (req.user.id === req.params.id || req.user.isAdmin) {
       next();
     } else {
-      console.log(`${req.user}`);
       return next(createError(403, "You are not authorized!"));
     }
   });
